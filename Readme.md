@@ -1,6 +1,6 @@
 # FreeFire Token (FF)
 
-FreeFire Token (FF) is an ERC-20 token implemented on the Ethereum blockchain. It serves as a utility token for the FreeFire platform, enabling users to access certain features or benefits within the ecosystem.
+FreeFire Token (FF) is an ERC-20 token implemented on the Ethereum blockchain. It serves as a utility token for the FreeFire platform, allowing users to access specific features or benefits within the ecosystem.
 
 ## Features
 
@@ -20,8 +20,8 @@ The FreeFire token contract (`FreeFire.sol`) inherits from OpenZeppelin's `ERC20
 
 ### Variables
 
-- `Coupen`: A public constant representing the number of tokens required to redeem a coupon.
-- `CoupenRedeemed`: A mapping to keep track of whether a user has already redeemed their coupon.
+- `COUPON`: A public constant representing the number of tokens required to redeem a coupon.
+- `_couponRedeemed`: A mapping to keep track of whether a user has already redeemed their coupon.
 
 ### Constructor
 
@@ -29,13 +29,13 @@ The constructor initializes the token with the name "FreeFire" and symbol "FF". 
 
 ### Functions
 
-- `mintLoot`: Allows the owner to mint additional tokens and send them to a specified account.
-- `redeemItem`: Allows users to redeem a coupon, provided they have the required balance and haven't already redeemed the coupon.
-- `burnLoot`: Allows users to burn (destroy) a certain amount of tokens from their own balance.
+- `mintingLoot`: Allows the owner to mint additional tokens and send them to a specified account.
+- `redeemingLoot`: Allows users to redeem a coupon, provided they have the required balance and haven't already redeemed the coupon.
+- `burningLoot`: Allows users to burn (destroy) a certain amount of tokens from their own balance.
 
 ## Usage
 
-To interact with the FreeFire token, you can use any Ethereum wallet or contract that supports ERC-20 tokens. Users can transfer, receive, and hold FF tokens. Additionally, they can redeem coupons using the `redeemItem` function if they meet the requirements.
+To interact with the FreeFire token, users can utilize any Ethereum wallet or contract that supports ERC-20 tokens. Users can transfer, receive, and hold FF tokens. Additionally, they can redeem coupons using the `redeemingLoot` function if they meet the requirements.
 
 ## Security Considerations
 
@@ -45,4 +45,3 @@ To interact with the FreeFire token, you can use any Ethereum wallet or contract
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
